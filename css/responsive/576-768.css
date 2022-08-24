@@ -1,0 +1,57 @@
+#morals-section .moral-items {
+    display: block;
+    padding: 0rem 2rem 0 2rem;
+}
+
+#morals-section .moral-item {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+#skills-section {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 800px;
+}
+
+#colleague-section .colleague-items {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 700px) {
+    #navbar {
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        align-items: normal;
+        padding: 1rem 0 0 0;
+    }
+
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    #navbar ul li a {
+        padding: 2rem;
+        transition: all 0.2s linear;
+        display: block;
+        width: 100%;
+    }
+
+    #navbar ul li {
+        width: 100%;
+    }
+
+    #navbar h1 {
+        align-self: center;
+    }
+
+    #navbar ul li a:hover {
+        background-color: orange;
+        color: #333;
+    }
+}

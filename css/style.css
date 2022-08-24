@@ -1,0 +1,411 @@
+/*
+------------------------
+Fonts
+------------------------
+*/
+/* Vazirmatn */
+@font-face {
+    font-family: "vazirReg";
+    src: url("../fonts/Vazirmatn-FD-Regular.woff2");
+}
+
+@font-face {
+    font-family: "vazirBlack";
+    src: url("../fonts/Vazirmatn-FD-Black.woff2");
+}
+
+@font-face {
+    font-family: "vazirSemibold";
+    src: url("../fonts/Vazirmatn-FD-SemiBold.woff2");
+}
+
+/* Samim */
+@font-face {
+    font-family: "samim";
+    src: url("../fonts/Samim-FD.woff2");
+}
+
+@font-face {
+    font-family: "samimMed";
+    src: url("../fonts/Samim-Medium-FD.woff2");
+}
+
+@font-face {
+    font-family: "samimBold";
+    src: url("../fonts/Samim-Bold-FD.woff2");
+}
+
+/*
+------------------------
+Reset
+------------------------
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+------------------------
+General 
+------------------------
+*/
+body,
+html {
+    font-family: "vazirReg", Arial, Helvetica, sans-serif;
+    line-height: 1.7rem;
+}
+
+a {
+    text-decoration: none;
+    color: #eeeeee;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+:root {
+    --primaryColor: #0078aa;
+    --secondaryColor: #3ab4f2;
+    --textMainColor: #f2df3a;
+    --textColor: #f6f6f6;
+}
+
+.clear {
+    clear: both;
+}
+
+.bg-dark {
+    background: #333;
+    color: white;
+}
+
+.text-primary {
+    color: orange;
+}
+
+/*
+------------------------
+Navbar
+------------------------
+*/
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 4rem;
+    position: sticky;
+    top: 0;
+}
+
+#navbar a {
+    color: var(--textColor);
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li a {
+    padding: 1.5rem 0.75rem;
+    transition: all 0.2s linear;
+}
+
+#navbar ul li a:hover {
+    background-color: orange;
+    color: #333;
+}
+
+/*
+------------------------
+Showcase
+------------------------
+*/
+#showcase {
+    background: url("../image/header.jpg") no-repeat center/cover;
+    height: calc(100vh - 75.2px);
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    align-items: flex-start;
+}
+
+#showcase .showcase-content h1 {
+    background-color: orange;
+    padding: 1rem;
+    margin-right: 2rem;
+    font-family: "vazirBlack", sans-serif;
+    border-radius: 0 1rem 0 0;
+}
+
+#showcase .showcase-content p {
+    background-color: var(--textColor);
+    padding: 0.75rem 1rem;
+    margin-right: 2rem;
+    font-size: 1.1rem;
+    font-family: "samimMed", sans-serif;
+    border-radius: 0 0 0 1rem;
+}
+
+/*
+------------------------
+moral Section
+------------------------
+*/
+#morals-section .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+#morals-section h2 {
+    text-align: center;
+    font-family: "vazirReg", sans-serif;
+    color: #FFFFE0;
+    font-size: 1.6rem;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 209, 67, 1) 0%, rgba(255, 145, 83, 1) 90%);
+    padding: 0.5rem 0.2rem;
+    width: 180px;
+    margin: 0 auto 0.75rem auto;
+    border-radius: 2px;
+}
+
+#morals-section .moral-items {
+    display: flex;
+    padding: 1.5rem;
+}
+
+#morals-section .moral-item {
+    display: flex;
+    align-items: center;
+    margin: 0 0.75rem 0 0.75rem;
+    flex: 1;
+}
+
+#morals-section .moral-item i {
+    background-color: orange;
+    color: #333;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+#morals-section .moral-item h4 {
+    color: #333;
+    font-size: 1.25rem;
+    font-family: "vazirSemibold", sans-serif;
+}
+
+/*
+------------------------
+skills Section
+------------------------
+*/
+#skills-section {
+    display: flex;
+    background-color: #333;
+    height: 500px;
+}
+
+#skills-section .content {
+    align-self: center;
+    color: var(--textColor);
+    padding: 1.5rem;
+    line-height: 2rem;
+}
+
+#skills-section i {
+    font-size: 2rem;
+    margin-left: 0.5rem;
+}
+
+#skills-section .content {
+    flex: 55%;
+}
+
+#skills-section .skills-img {
+    background: url("../image/pro2.jpg") no-repeat center center/cover;
+    flex: 45%;
+}
+
+#skills-section .skills-div {
+    margin-bottom: 3rem;
+}
+
+#skills-section ul li {
+    border-bottom: 1px dashed #444;
+    padding: 0.5rem 0;
+}
+
+#skills-section ul li:last-child {
+    border-bottom: none;
+}
+
+.icon-flex {
+    display: flex;
+    align-items: center;
+}
+
+/*
+------------------------
+colleague Section
+------------------------
+*/
+#colleague-section {
+    background: #eee;
+}
+
+#colleague-section .colleague-items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 1rem;
+}
+
+#colleague-section .colleague-items img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 70%;
+    height: 90%;
+    border: 3px solid orange;
+}
+
+#colleague-section .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+#colleague-section h2 {
+    text-align: center;
+    font-family: "vazirReg", sans-serif;
+    color: #FFFFE0;
+    font-size: 1.6rem;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 209, 67, 1) 0%, rgba(255, 145, 83, 1) 90%);
+    padding: 0.5rem 0.2rem;
+    width: 180px;
+    margin: 0 auto 0.5rem auto;
+    border-radius: 2px;
+}
+
+/*
+------------------------
+contact Section
+------------------------
+*/
+#contact {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+#contact .contact-form {
+    flex-basis: 600px;
+    text-align: right;
+}
+
+#contact .contact-form label {
+    display: block;
+    margin-top: 0.75rem;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    font-family: "vazirReg", sans-serif;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+#contact h2 {
+    text-align: center;
+    font-family: "vazirReg", sans-serif;
+    color: #FFFFE0;
+    font-size: 1.6rem;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 209, 67, 1) 0%, rgba(255, 145, 83, 1) 90%);
+    padding: 0.5rem 0.2rem;
+    width: 180px;
+    margin: 0 auto 0.5rem auto;
+    border-radius: 2px;
+}
+
+#contact form {
+    padding: 0.25rem 1.5rem 1.5rem 1.5rem;
+}
+
+#contact .contactSubmitBtn {
+    font-family: "samim", sans-serif;
+}
+
+.contactSubmitBtn {
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    font-size: 1rem;
+}
+
+.contactSubmitBtn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contactSubmitBtn:active {
+    transform: scale(0.95);
+}
+
+/*
+------------------------
+Footer Section
+------------------------
+*/
+#footer {
+    padding: 2rem;
+    background-color: #333333;
+    color: #eeeeee;
+}
+
+#footer .social-icons i {
+    font-size: 2rem;
+    margin: 0 0.25rem;
+    display: block;
+}
+
+#footer .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer .social-icons {
+    display: flex;
+}
+
+#footer .fa-heart {
+    color: #FF512F;
+}
+

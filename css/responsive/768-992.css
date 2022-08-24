@@ -1,0 +1,36 @@
+#morals-section .moral-items {
+    display: flex;
+    padding: 0rem 1rem 0 1rem;
+}
+
+#morals-section .moral-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1.25rem 1rem 0.5rem 1rem;
+}
+
+#morals-section .moral-item i {
+    margin-bottom: 0.75rem;
+}
+
+#skills-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 500px;
+}
+
+#skills-section .content {
+    flex: 70%;
+}
+
+#skills-section .skills-img {
+    flex: 30%;
+    height: 500px;
+}
+
+#colleague-section .colleague-items {
+    grid-template-columns: repeat(4, 1fr);
+}
+
